@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:firework_rocket",Count:1b,tag:{display:{Name:'{"text":"Salmon Launcher","color":"white","italic":false}'},HideFlags:2,Fireworks:{}, salmon:1b, CustomModelData:800001}}}
