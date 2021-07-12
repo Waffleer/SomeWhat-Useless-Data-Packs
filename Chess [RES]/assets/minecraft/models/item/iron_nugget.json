@@ -1,0 +1,39 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/iron_nugget"
+    },
+	"overrides": [
+
+        {"predicate": {"custom_model_data":800},"model": "item/custom/w"},
+        {"predicate": {"custom_model_data":801},"model": "item/custom/1"},
+        {"predicate": {"custom_model_data":802},"model": "item/custom/2"},
+        {"predicate": {"custom_model_data":803},"model": "item/custom/3"},
+        {"predicate": {"custom_model_data":804},"model": "item/custom/4"},
+        {"predicate": {"custom_model_data":805},"model": "item/custom/5"},
+        {"predicate": {"custom_model_data":806},"model": "item/custom/6"},
+        {"predicate": {"custom_model_data":807},"model": "item/custom/7"},
+        {"predicate": {"custom_model_data":808},"model": "item/custom/8"},
+        {"predicate": {"custom_model_data":809},"model": "item/custom/a"},
+        {"predicate": {"custom_model_data":810},"model": "item/custom/b"},
+        {"predicate": {"custom_model_data":811},"model": "item/custom/c"},
+        {"predicate": {"custom_model_data":812},"model": "item/custom/d"},
+        {"predicate": {"custom_model_data":813},"model": "item/custom/e"},
+        {"predicate": {"custom_model_data":814},"model": "item/custom/f"},
+        {"predicate": {"custom_model_data":815},"model": "item/custom/g"},
+        {"predicate": {"custom_model_data":816},"model": "item/custom/h"},
+
+        {"predicate": {"custom_model_data":901},"model": "item/whitep"},
+        {"predicate": {"custom_model_data":902},"model": "item/whiteb"},
+        {"predicate": {"custom_model_data":903},"model": "item/whiteh"},
+        {"predicate": {"custom_model_data":904},"model": "item/whiter"},
+        {"predicate": {"custom_model_data":905},"model": "item/whiteq"},
+        {"predicate": {"custom_model_data":906},"model": "item/whitek"},
+        {"predicate": {"custom_model_data":907},"model": "item/blackp"},
+        {"predicate": {"custom_model_data":908},"model": "item/blackb"},
+        {"predicate": {"custom_model_data":909},"model": "item/blackh"},
+        {"predicate": {"custom_model_data":910},"model": "item/blackr"},
+        {"predicate": {"custom_model_data":911},"model": "item/blackq"},
+        {"predicate": {"custom_model_data":912},"model": "item/blackk"}
+    ]
+}

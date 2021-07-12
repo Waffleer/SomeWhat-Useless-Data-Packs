@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "collector": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "chesspack:chessb"
+            }
+        }
+    },
+    "rewards": {
+        "function": "chesspack:item/craft"
+    }
+}
