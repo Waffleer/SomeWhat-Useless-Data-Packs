@@ -20,3 +20,16 @@
       #X#   X = stick
       ###
 
+ # Lava Collecter
+     Adds a placeable block that collects lava from a cauldren above it
+        Puts a bucket in the block, can be pulled with a hopper
+     Wait this pack is actually Useful
+     This makes dripstone lava sources completely automated
+     Warning - this pack produces buckets for free -  ∞ Buckets
+     
+     #X#    # = cobble
+     #O#    X = bucket
+     #@#    O = copper ingot
+            @ = iron block
+     
+     
