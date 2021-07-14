@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+      "#X#",
+      "#O#",
+      "#@#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:cobblestone"
+      },
+      "X": {
+        "item": "minecraft:bucket"
+      },
+      "O": {
+        "item": "minecraft:copper_ingot"
+      },
+      "@": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "minecraft:knowledge_book"
+    }
+}

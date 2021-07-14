@@ -1,0 +1,1 @@
+function lavacollector:lava_item/give

@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:firework_rocket",Count:1b,tag:{display:{Name:'{"text":"Lava Collector","color":"white","italic":false}'},HideFlags:2,Fireworks:{}, collector:1b, CustomModelData:991199}}}

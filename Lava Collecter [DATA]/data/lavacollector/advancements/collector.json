@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "collector": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "lavacollector:collector"
+            }
+        }
+    },
+    "rewards": {
+        "function": "lavacollector:lava_item/craft"
+    }
+}
