@@ -10,6 +10,7 @@
       #X#   # = cobble
       #O#   O = bow
       ###   X = bucket
+      
 # Chess Pack
       Adds Chess Piece and a board to the game
       You can pull any piece out of the chest
@@ -31,5 +32,19 @@
      #O#    X = bucket
      #@#    O = copper ingot
             @ = iron block
+            
+ # Auto Crafter 1.1 - In Progress - kinda
+     Adds a block that will take ingredents in and outputs the product
+     Uses Hoppers to function
+     Put the Final Product on top of the crafter to bind the crafter
+         Break the crafter to un bind
+     Example, 9 iron go in, 1 iron block goes out
+     I did not make a RES pack for this so the block will look like a firework in inventories
+     List of items are in file called "data auto carfter.txt"
+     Binding a Gold Nugget will make Gold ingots out of Gold Nuggets
      
-     
+     #X#    # = Iron Block
+     XOX    X = Crafting Table
+     #X#    O = Gold Ingot
+  
+ 
