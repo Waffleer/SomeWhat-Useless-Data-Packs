@@ -64,9 +64,9 @@ def print_():
     print(T_num)
     print(ingredents)
     print(ingredentsNum)
-
-mainNum = 1
-
+##########################################################
+mainNum = 43
+##########################################################
 qq = input('Do you want to use the txt? (y/n) |       ')
 if qq == 'y':
     t = True
@@ -76,12 +76,29 @@ else:
     print('')
 
 if t == True:
+    
     txtList = []
-    txt = file_('list.txt','#')
+
+
+
+    #######################################################
+    txt = file_('list copy.txt','#')
+    #######################################################
+
+
+
     txt.read()
     txt.filterOut()
 
+
+
+    #######################################################
     data = file_('data auto crafter.txt','#')
+    #######################################################
+
+
+
+
     data.read()
     data.filterOut()
 
@@ -179,9 +196,11 @@ if t == True:
             print(f'{name}  {pNum}  {T_num}  {ingredents}  {ingredentsNum}  is in data base\n')
         else:
             #print(f'{name}  {pNum}  {T_num}  {ingredents}  {ingredentsNum}  not in data list')
+            
             current_ = dataList[-1]
+            print(current_)
             current_1 = current_.split(' ')
-            current_2 = current_1[1]
+            current_2 = current_1[-1]
             current_3 = current_2.strip(' ')
             current = int(current_3)
 
@@ -203,7 +222,7 @@ if t == True:
                     pass
                 else: 
                     y = 666
-                    f = open(f'Auto Crafter 1.1/data/autocrafting/functions/function/files/main{z - 5}-{z - 1}.mcfunction', 'a')
+                    f = open(f'Auto Crafter 1.1 [DATA]/data/autocrafting/functions/function/files/main{z - 5}-{z - 1}.mcfunction', 'a')
                     f.write(f'\nexecute if score @s type matches {mainNum} as @s at @s run function autocrafting:function/recipes/{name}/main')
                     f.close
                 y += 1
@@ -219,19 +238,19 @@ if t == True:
 
 
 
-            d = f'Auto Crafter 1.1/data/autocrafting/functions/function/recipes/{name}' 
+            d = f'Auto Crafter 1.1 [DATA]/data/autocrafting/functions/function/recipes/{name}' 
             if not os.path.exists(d):
                 os.makedirs(d)
 
 
 
 
-            f = open(f"Auto Crafter 1.1/data/autocrafting/functions/function/setcrafting.mcfunction", "a")
+            f = open(f"Auto Crafter 1.1 [DATA]/data/autocrafting/functions/function/setcrafting.mcfunction", "a")
             f.write(f'\n execute if entity @e[type=item, limit=1, sort=nearest, tag=!checked, nbt={{Item:{{id:"minecraft:{name}"}}}}] as @s at @s run function autocrafting:function/recipes/{name}/create')
             f.close
 
 
-            f = open(f"Auto Crafter 1.1/data/autocrafting/functions/function/recipes/{name}/crafting.mcfunction", "a")
+            f = open(f"Auto Crafter 1.1 [DATA]/data/autocrafting/functions/function/recipes/{name}/crafting.mcfunction", "a")
             if T_num == 1:
                 f.write(f'\nexecute store result score @s count_in1 run data get entity @s HandItems[0].tag.content[{{id:"minecraft:{ingredents[0]}"}}].Count')
                 f.write('\n')
@@ -333,7 +352,7 @@ if t == True:
                 f.write(f'\nscoreboard players reset @s count_in5')
             f.close
 
-            f = open(f"Auto Crafter 1.1/data/autocrafting/functions/function/recipes/{name}/create.mcfunction", "a")
+            f = open(f"Auto Crafter 1.1 [DATA]/data/autocrafting/functions/function/recipes/{name}/create.mcfunction", "a")
             f.write(f'\ntag @s remove unset')
             f.write(f'\ntag @s add {name}')
             f.write(f'\nscoreboard players set @s type {mainNum}')
@@ -345,7 +364,7 @@ if t == True:
             f.close
 
 
-            f = open(f"Auto Crafter 1.1/data/autocrafting/functions/function/recipes/{name}/getcontent.mcfunction", "a")
+            f = open(f"Auto Crafter 1.1 [DATA]/data/autocrafting/functions/function/recipes/{name}/getcontent.mcfunction", "a")
             if T_num == 1:
                 f.write(f'\nexecute if block ~ ~ ~ dropper{{Items:[{{Slot:0b, id:"minecraft:{ingredents[0]}"}}]}} run tag @s add content')
                 f.write(f'\nexecute if entity @s[tag=content] store result score @s adder run data get block ~ ~ ~ Items[0].Count')
@@ -463,7 +482,7 @@ if t == True:
                 f.write(f'\nscoreboard players reset @s adder')
             f.close
 
-            f = open(f"Auto Crafter 1.1/data/autocrafting/functions/function/recipes/{name}/main.mcfunction", "a")
+            f = open(f"Auto Crafter 1.1 [DATA]/data/autocrafting/functions/function/recipes/{name}/main.mcfunction", "a")
             f.write(f'\nexecute as @s at @s run function autocrafting:function/recipes/{name}/getcontent')
             f.write(f'\nexecute as @s at @s run function autocrafting:function/recipes/{name}/crafting')
             f.close
@@ -478,10 +497,6 @@ if t == True:
         x_1 += 1
     x_1 = 0
     y_1 = 0
-
-
-
-
 if t == False:
     T_num = 0
 

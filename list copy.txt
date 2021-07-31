@@ -1,0 +1,8 @@
+###         item name,how many produced,number of ingredients,ing name, ing num, ing name,...
+
+book,1,2,paper,3,leather,1
+bone_meal,3,1,bone,1
+blaze_powder,2,1,blaze_rod,1
+glass_pane,16,1,glass,6
+
+

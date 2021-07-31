@@ -40,3 +40,7 @@ melon_slice 39
 coal_block 40
 coal 41
 gold_nugget to gold_ingot 42
+book 44
+bone_meal 45
+blaze_powder 46
+glass_pane 47
