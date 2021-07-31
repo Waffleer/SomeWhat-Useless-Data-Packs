@@ -1,7 +1,7 @@
 {
     "type": "crafting_shaped",
     "pattern": [
-      "#X#",
+      "#@#",
       "XOX",
       "#X#"
     ],
@@ -10,10 +10,13 @@
         "item": "minecraft:iron_block"
       },
       "X": {
-        "item": "minecraft:crafting_table"
+        "item": "minecraft:diamond"
       },
-      "O": {
+      "@": {
         "item": "minecraft:gold_ingot"
+      },
+        "O": {
+        "item": "minecraft:crafting_table"
       }
     },
     "result": {
