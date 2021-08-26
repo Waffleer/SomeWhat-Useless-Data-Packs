@@ -43,8 +43,9 @@
      List of items are in file called "data auto carfter.txt"
      Binding a Gold Nugget will make Gold ingots out of Gold Nuggets
      
-     #X#    # = Iron Block
-     XOX    X = Crafting Table
-     #X#    O = Gold Ingot
+     #A#    # = Iron Block
+     XOX    X = Diamond
+     #X#    A = Gold Ingot
+            O = Crafting Table
   
  
